@@ -103,6 +103,12 @@ header .navbar {
     background: var(--secondary-color);
 }
 
+
+.navbar :where(#menu-close-button, #menu-open-button) {
+display: none;
+}
+
+
 /* hero section */
 .hero-section {
     min-height: 100vh;
@@ -186,6 +192,7 @@ header .navbar {
     }
 
     .navbar :where(#menu-close-button, #menu-open-button) {
+        display: block;
         font-size: var(--font-size-l);
     }
 
@@ -202,7 +209,7 @@ header .navbar {
     .navbar .nav-menu {
         display: block;
         position: fixed;
-        left:0;
+        left: -300px;
         top:0;
         width: 300px;
         height: 100%;
