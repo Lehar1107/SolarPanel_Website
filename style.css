@@ -37,6 +37,11 @@
     --size-max-width: 1300px;
 
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
 /* whole styling*/
 
 ul {
@@ -305,6 +310,7 @@ display: none;
 }
 
 .testimonials-section .testimonial {
+    user-select: none;
     display: flex;
     padding: 35px;
     text-align: center;
@@ -561,7 +567,7 @@ display: none;
 
     .about-section .section-content {
         gap: 70px;
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 
     .about-section .about-image-wrapper .about-image {
